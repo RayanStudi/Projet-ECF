@@ -1,0 +1,264 @@
+/*----------- General -----------*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+ul, nav {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    opacity: 0.9;
+    font-size: 18px;
+}
+
+a:hover {
+    opacity: 5;
+}
+
+
+
+a.btn{
+	color: black;
+	border-radius: 50px;
+	text-transform: uppercase;
+	background-color: white;
+	font-weight: 600;
+	text-align: center;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 125px 100px;
+}
+
+section h3.title{
+	color: #414a4f;
+	text-transform: capitalize; 
+	font: bold 32px 'Open Sans', sans-serif;
+	margin-bottom: 35px;
+	text-align: center;
+}
+
+section p{
+	max-width: 800px;
+	text-align: center;
+	margin-bottom: 35px;
+	padding: 0 20px;
+}
+
+ul.grid{
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+} 
+
+@media (max-width: 1000px){
+
+	section{
+		padding: 100px 50px;
+	}
+
+}
+
+@media (max-width: 600px){
+
+	section{
+		padding: 80px 30px;
+	}
+
+}
+
+/*----------- header -----------*/
+
+header{
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 10;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+    color: white;
+	padding: 10px 40px 10px;
+}
+
+
+header h2 {
+    font-family: 'Quicksand', sans-serif;
+}
+
+header nav {
+    display: flex;
+}
+
+header nav li {
+    margin: 0 7px;
+}
+
+header nav li a {
+    font-weight: 300;
+}
+
+.sign-in {
+    color: black;
+}
+
+
+@media (max-width: 1000px) {
+    header{
+        padding: 20px 20px;
+    }
+}
+
+@media (max-width: 700px) {
+    header{
+        flex-direction: column;
+    }
+    header h2 {
+        margin-bottom: 15px;
+    }
+}
+
+
+/*-------------- Homepage --------------- */
+.homepage {
+    position: relative;
+    justify-content: center;
+    min-height: 100vh;
+    text-align: center;
+}
+
+.homepage .background-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    background-color: aliceblue;
+    z-index: -1;
+}
+
+.homepage h1{
+	font: bold 60px 'Open Sans', sans-serif;
+	margin-bottom: 15px;
+    color: aliceblue;
+}
+
+
+
+.homepage a.btn {
+    padding: 20px 40px;
+}
+
+@media (max-width: 800px){
+
+	.homepage{
+		min-height: 600px;
+	}
+
+	.homepage h1{
+		font-size: 48px;
+	}
+
+	.homepage a.btn{
+		padding: 15px 40px;
+	}
+
+}
+
+
+/*-------------------- welcome Section ---------------------*/
+
+.welcome .grid li{
+	padding: 20px;
+	height: 350px;
+	border-radius: 3px;
+	background-clip: content-box;
+	background-size: cover;
+	background-position: center;
+	background-color: #333;
+}
+
+.welcome .grid li.list-s{
+	flex-basis: 40%;
+}
+
+.welcome .grid li.list-l{
+	flex-basis: 60%;
+}
+
+@media (max-width: 1000px){
+
+	.welcome .grid li.list-s,
+	.welcome .grid li.list-l{
+		flex-basis: 100%;
+	}
+
+}
+
+
+
+
+/*------------------ footer -----------------*/
+.contenu {
+    flex: 1 0 auto;
+}
+
+footer {
+    flex-shrink: 0;
+    border-top: 1px solid black;
+    width: 100%;
+    background: white;
+    color: aliceblue;
+    padding: 30px;
+    font-family: 'Quicksand', sans-serif;
+    background-color: #333;
+    line-height: 2;
+}
+
+.content-footer {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    font-size: 16px;
+}
+
+.footer-contact{
+    margin-right: 30px;
+}
+
+.footer-media {
+    margin: 0 15px;
+}
+
+@media (max-width: 600px) {
+    footer {
+        padding: 12px 12px 15px;
+    }
+
+    .content-footer {
+        font-size: 10px;
+    }
+
+    .content-footer a {
+        font-size: 10px;
+    }
+
+
+    .footer-contact {
+        margin-right: 0;
+    }
+}
